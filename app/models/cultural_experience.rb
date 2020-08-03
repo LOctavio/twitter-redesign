@@ -1,0 +1,2 @@
+class CulturalExperience < ApplicationRecord
+end
