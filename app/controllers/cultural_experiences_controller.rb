@@ -1,5 +1,8 @@
 class CulturalExperiencesController < ApplicationController
-    def index
-        @current_user = User.find_by_id(session[:current_user_id])
-    end
+    include SessionsHelper
+
+    before_action :require_login
+
+    def index;end
+    
 end
