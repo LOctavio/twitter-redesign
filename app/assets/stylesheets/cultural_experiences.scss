@@ -1,3 +1,56 @@
 // Place all the styles related to the cultural_experiences controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-SemiBoldItalic.ttf");
+ }
+
+.left-side-menu {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #6c8193;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    .top-side {
+        background-color:#1a2a3d;
+        display: inherit;
+        .follow {
+            flex-grow: 1;
+            text-align: center;
+            padding: 20px 0;
+            border: 2px #182937 solid;
+        }
+    }
+
+    .bottom-side{
+        background-color:#213245;
+        text-transform: uppercase;
+        height: -moz-available;
+        height: -webkit-fill-available;
+        height: fill-available;
+        li {
+            padding: 20px;
+        }
+    }
+}
+
+.amount-of-follows {
+    color: #cbd7e3;
+}
+
+.user-info {
+    text-transform: uppercase;
+    padding: 20px;
+    display: inherit;
+    align-items: center;
+    .profile-img {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+    }
+    .user-name {
+        padding-left: 10px;
+    }
+}
