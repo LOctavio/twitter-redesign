@@ -24,5 +24,15 @@
         </ul>
     </div>
 </aside>
-<div>
+<header class="main-header">
+    <span>Logo</span>
+    <%= button_to  "Log out", logout_path, method: :delete, class: "log-out" %>
+</header>
+<div class="main-content">
+    <div>
+        tweets
+    </div>
+    <div>
+        who to follow
+    </div>
 </div>
